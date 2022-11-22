@@ -126,3 +126,12 @@ def to_jaden_case(string):
         caps = (i.replace(i, i.capitalize()))
         fixed.append(caps)
     return (" ".join(fixed))
+
+
+def square_sum(numbers):
+    products = []
+    for i in numbers:
+        squared = i*i
+        products.append(squared)
+    return (sum(products))
+
