@@ -117,3 +117,12 @@ def remove_char(s):
 
 def grow(arr):
     return (math.prod(arr))
+
+
+def to_jaden_case(string):
+    split = (string.split(' '))
+    fixed = []
+    for i in split:
+        caps = (i.replace(i, i.capitalize()))
+        fixed.append(caps)
+    return (" ".join(fixed))
