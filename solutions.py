@@ -1,29 +1,30 @@
+# Beginner - Reduce but Grow
 import math
 def sum_array(a):
     total = (sum(a))
     return total
 
-
+# Opposite number
 def opposite(number):
     return -number
 
-
+# Will you make it?
 def zero_fuel(distance_to_pump, mpg, fuel_left):
     if distance_to_pump <= (mpg * fuel_left):
         return True
     else: return False
 
-
+# Century From Year
 def century(years):
     return ((years-1) // 100) + 1
 
-
+# A Needle in the Haystack
 def find_needle(haystack):
     index = haystack.index("needle")
     print(index)
     return (f'found the needle at position {index}')
 
-
+# Basic Mathematical Operations
 def basic_op(operator, value1, value2):
     if operator == '+':
         return (value1 + value2)
@@ -34,7 +35,7 @@ def basic_op(operator, value1, value2):
     else:
         return (value1 / value2)
 
-
+# Sum Mixed Array
 def sum_mix(arr):
     nums_list = []
     for x in arr:
@@ -44,6 +45,7 @@ def sum_mix(arr):
     return (sum(nums_list))
 
 
+# Beginner - Lost Without a Map
 def maps(a):
     doubled = []
     for i in a:
@@ -51,7 +53,7 @@ def maps(a):
         doubled.append(twice)
     return (doubled)
 
-
+# Number of People in the Bus
 def number(bus_stops):
     entry = []
     exit = []
@@ -64,7 +66,7 @@ def number(bus_stops):
     loss = sum(exit)
     return (sums-loss)
 
-
+# Opposites Attract
 def lovefunc(flower1, flower2):
     sum = flower1 + flower2
     print(sum % 2)
@@ -74,31 +76,31 @@ def lovefunc(flower1, flower2):
         return False
 print(lovefunc(2, 2))
 
-
+# L1: Set Alarm
 def set_alarm(employed, vacation):
     if employed == True and vacation == False:
         return True
     else:
         return False
 
-
+# MakeUpperCase
 def make_upper_case(s):
     return s.upper()
 
-
+# You only need one - Beginner
 def check(arr, x):
     if x in arr:
         return True
     else: return False
 
-
+# Invert values
 def invert(lst):
     inverse = []
     for i in lst:
         inverse.append(-i)
     return (inverse)
 
-
+# List Filtering
 def filter_list(l):
     filtered = []
     for i in l:
@@ -107,18 +109,19 @@ def filter_list(l):
     return (filtered)
 
 
+# Sum of odd numbers
 def row_sum_odd_numbers(n):
     return (n * n * n)
 
-
+# Remove First and Last Character
 def remove_char(s):
     return s[1:-1]
 
-
+# Beginner - Reduce but Grow
 def grow(arr):
     return (math.prod(arr))
 
-
+# Jaden Casing Strings
 def to_jaden_case(string):
     split = (string.split(' '))
     fixed = []
@@ -127,7 +130,7 @@ def to_jaden_case(string):
         fixed.append(caps)
     return (" ".join(fixed))
 
-
+# Square(n) Sum
 def square_sum(numbers):
     products = []
     for i in numbers:
@@ -135,8 +138,21 @@ def square_sum(numbers):
         products.append(squared)
     return (sum(products))
 
-
+# Get the Middle Character
 def get_middle(s):
     if len(s)%2 == 1:
         return(s[int(len(s)/2)])
     else: return(s[int(len(s)/2) - 1] + s[int(len(s)/2)])
+
+# Who likes it?
+def likes(names):
+    if names == []:
+        return 'no one likes this'
+    elif len(names) == 1:
+        return (f'{names[0]} likes this')
+    elif len(names) == 2:
+        return (f'{names[0]} and {names[1]} like this')
+    elif len(names) == 3:
+        return (f'{names[0]}, {names[1]} and {names[2]} like this')
+    else:
+        return (f'{names[0]}, {names[1]} and {len(names) - 2} others like this')
