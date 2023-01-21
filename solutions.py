@@ -156,3 +156,26 @@ def likes(names):
         return (f'{names[0]}, {names[1]} and {names[2]} like this')
     else:
         return (f'{names[0]}, {names[1]} and {len(names) - 2} others like this')
+
+# Take a Ten Minutes Walk
+def is_valid_walk(walk):
+    addends = []
+    if len(walk) != 10:
+        return False
+    else:
+        for direction in walk:
+            if direction == 'n':
+                addends.append(1)
+            elif direction == 's':
+                addends.append(-1)
+            elif direction == 'e':
+                addends.append(2)
+            elif direction == 'w':
+                addends.append(-2)
+    if sum(addends) == 0:
+        return True
+    else:
+        return False
+# after looking at others solutions, I can see that I overthought this
+# solution and could have just checked if the count of 'n' = count of 's'
+# and vice versa for 'w' and 'e'
