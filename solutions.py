@@ -179,3 +179,14 @@ def is_valid_walk(walk):
 # after looking at others solutions, I can see that I overthought this
 # solution and could have just checked if the count of 'n' = count of 's'
 # and vice versa for 'w' and 'e'
+
+# Which are in?
+def in_array(array1, array2):
+    r = []
+    for word in array1:
+        for words in array2:
+            if word in words:
+                if word not in r:
+                    r.append(word)
+    r.sort()
+    return r
